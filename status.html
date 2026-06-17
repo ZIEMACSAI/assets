@@ -67,7 +67,7 @@
     }
     .status-banner.degraded .status-text { color: #f57c00; }
     .status-banner.outage .status-text { color: #c62828; }
-    
+
     .card {
       background: #fff;
       border-radius: 12px;
@@ -107,7 +107,7 @@
     .status-dot.operational { background: #4caf50; }
     .status-dot.degraded { background: #ff9800; }
     .status-dot.outage { background: #f44336; }
-    
+
     .incident-section h2 {
       margin-bottom: 16px;
     }
@@ -136,7 +136,7 @@
       font-size: 0.95rem;
       color: #444;
     }
-    
+
     .subscribe {
       text-align: center;
       margin-top: 32px;
@@ -153,7 +153,7 @@
       text-decoration: none;
       font-weight: 500;
     }
-    
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -171,7 +171,7 @@
     <header>
       <a href="https://ziemacs.ai" class="logo">ZIEMACS AI</a>
       <h1>System Status</h1>
-      <p class="last-updated">Last updated: February 10, 2026 at 3:00 PM EST</p>
+      <p class="last-updated">Last updated: June 17, 2026 at 10:00 AM EST</p>
     </header>
 
     <div class="status-banner operational">
@@ -183,6 +183,13 @@
       <h2>Services</h2>
       <div class="service-row">
         <span class="service-name">PowerHA Copilot API</span>
+        <span class="service-status">
+          <span class="status-dot operational"></span>
+          Operational
+        </span>
+      </div>
+      <div class="service-row">
+        <span class="service-name">Cluster Management Agent</span>
         <span class="service-status">
           <span class="status-dot operational"></span>
           Operational
@@ -214,7 +221,7 @@
     <div class="card incident-section">
       <h2>Recent Incidents</h2>
       <p class="no-incidents">No incidents reported in the last 90 days.</p>
-      
+
       <!--
       Example incident (uncomment when needed):
       <div class="incident resolved">
@@ -230,7 +237,7 @@
     <div class="card">
       <h2>Scheduled Maintenance</h2>
       <p class="no-incidents">No maintenance scheduled at this time.</p>
-      
+
       <!--
       Example maintenance (uncomment when needed):
       <div class="incident investigating">
