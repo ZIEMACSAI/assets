@@ -155,7 +155,7 @@
         <a href="index.html">ZIEMACS AI</a> / Documentation
       </div>
       <h1>PowerHA Copilot Documentation</h1>
-      <p class="subtitle">Cluster Management Agent (CMA) for IBM PowerHA SystemMirror</p>
+      <p class="subtitle">ZIEMACS AI Copilot for IBM PowerHA SystemMirror</p>
     </header>
 
     <div class="grid">
@@ -181,36 +181,30 @@
       </div>
     </div>
 
-    <h2 class="section-title">AI Agents</h2>
-    <p>PowerHA Copilot includes specialized AI agents for different operational needs:</p>
+    <h2 class="section-title">Capabilities</h2>
+    <p>PowerHA Copilot is a single conversational agent for PowerHA operations. Every capability below is available on all plans:</p>
     
     <div class="agent-list">
       <div class="agent-item">
-        <h3>📋 Planning Agent</h3>
-        <p>Analyzes requirements and generates optimized cluster configurations. Provides deployment recommendations based on workload characteristics.</p>
-        <span class="badge">All Plans</span>
+        <h3>Monitoring and health assessment</h3>
+        <p>Reports cluster state, resource-group placement, node and network-interface status, and resource utilization on request.</p>
       </div>
       <div class="agent-item">
-        <h3>📊 Monitoring Agent</h3>
-        <p>Continuous health monitoring, anomaly detection, and proactive alerting. Tracks cluster state, resource utilization, and performance metrics.</p>
-        <span class="badge">All Plans</span>
+        <h3>Troubleshooting and diagnostics</h3>
+        <p>Answers natural-language questions about cluster behavior, analyzes logs, and surfaces likely root causes with suggested remediation steps.</p>
       </div>
       <div class="agent-item">
-        <h3>🔧 Troubleshooting Agent</h3>
-        <p>Diagnoses issues using natural language queries. Analyzes logs, identifies root causes, and suggests remediation steps.</p>
-        <span class="badge">All Plans</span>
+        <h3>Disaster recovery diagnostics (GRS and GLVM)</h3>
+        <p>Inspects and reports on GRS and GLVM replication and disaster-recovery configuration. Diagnostic and advisory; it does not perform failover.</p>
       </div>
       <div class="agent-item">
-        <h3>🔄 Migration Agent</h3>
-        <p>Plans and executes workload migrations between clusters. Validates configurations and ensures minimal downtime.</p>
-        <span class="badge pro">Professional+</span>
-      </div>
-      <div class="agent-item">
-        <h3>🛡️ Disaster Recovery Agent</h3>
-        <p>Manages DR configurations, GRS/GLVM replication, and automated failover procedures. Tests and validates recovery plans.</p>
-        <span class="badge ent">Enterprise</span>
+        <h3>Cluster operations</h3>
+        <p>Reports on cluster and resource-group state. Read-only by default; a resource-group move can be armed to run live under human control, as described below.</p>
       </div>
     </div>
+
+    <h2 class="section-title">Operational safety</h2>
+    <p>PowerHA Copilot is read-only by default. Write operations run in preview and report what they would do without changing the cluster. A resource-group move executes live only when a human explicitly arms that single operation; every other operation stays read-only.</p>
 
     <h2 class="section-title">System Requirements</h2>
     <table>
@@ -257,22 +251,10 @@
         <td>32</td>
       </tr>
       <tr>
-        <td>AI Agents</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>ServiceNow Integration</td>
-        <td>—</td>
-        <td>✓</td>
-        <td>✓</td>
-      </tr>
-      <tr>
-        <td>DR/GRS/GLVM</td>
-        <td>—</td>
-        <td>—</td>
-        <td>✓</td>
+        <td>Tools</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
       </tr>
       <tr>
         <td>Support</td>
